@@ -298,6 +298,11 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 
+.contact-left a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .contact-right {
     flex-basis: 60%;
 }
