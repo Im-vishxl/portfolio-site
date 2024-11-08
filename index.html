@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f39d85d084.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Vishal</span><br>from College of Engineering Thalassery</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/vishal3.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Greetings! I'm Vishal, a Full Stack Developer passionate about web development with expertise in crafting dynamic and user-friendly applications. My experience spans across React, MongoDB, and Node.js, enabling me to build seamless, end-to-end web solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br> Python, C++, C, Java, SQL, JavaScript</li>
+                            <li><span>Web development</span><br>HTML, CSS, React, Nodejs, MERN stack
+                                </li>
+                            <li><span>Quick learning</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>UI/UX</span><br>2 years of experiance <br>in UI/UX design</li>
+                            <li><span>Web development</span><br>2 years of experiance<br> in frontend development</li>
+                            <li><span>Backend developer</span><br>2 years of experiance<br> in backend development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B tech in Information Technology</span><br>College of Engineering Thalassery<br>2020 to 2024<br>CGPA : 7.71</li>
+                            <li><span>Higher Secondary Education </span><br>GHSS Pallikunn<br>2019 to 2020<br>Marks (%) : 87.9</li>
+                            <li><span>Secondary School Education </span><br>Kasturba Public School<br>Marks (%) : 90.1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>I bring creativity and functionality together to transform concepts into captivating online experiences. With a keen eye for aesthetics and expertise in user-centric interfaces, I'm dedicated to crafting visually striking and functionally robust websites. Whether you're a startup or an established business, let's collaborate to turn your ideas into digital masterpieces. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>I specialize in crafting beautiful interfaces with a focus on seamless user experiences. From launching new products to revamping existing interfaces, I'm here to elevate your digital presence. Let's collaborate to shape designs that engage and delight users. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend </h2>
+                    <p>Dive into the heart of digital functionality with me, a backend developer specializing in server-side operations, database management, and application logic. From crafting secure data systems to optimizing performance, I ensure your digital operations run seamlessly. Let's build a backend that scales effortlessly with your ambitions. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>A social media platform simplifies sharing
+                            experiences with ease connect with others
+                            through a clean interface.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Book repository</h3>
+                        <p>An online platform offering seamless
+                            access to a diverse collection of books and
+                            documents.
+                            </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Turf booking and hoisting platform</h3>
+                        <p>A website that offers one-stop solution for
+                            all things related to turf sports and event
+                            hosting.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------contact----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:vishalkv214@gmail.com">vishalkv214@gmail.com</a></p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/vishal.vichu.3152"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/vshhaalll/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Im-vishxl"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://www.linkedin.com/in/vishal-k-v-9658b2218/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="email" placeholder="You email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Vishal</p>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
